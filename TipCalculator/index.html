@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid calc">
+        <div class="row">
+            <h2 class="text-center blackFont"><img class="titleImg" src="https://5lpeug.bl3301.livefilestore.com/y3mxrQ1OvDno9KXdKafcuLQ8BUBZ30v6HW2qHktzS3B89KgOcCU0YXerwSMbONvaFBA8AC0jSlGaubfvVuOSID1t-niC0tuGo_wn9f1thSGsqBt-FgBTtIxKkwmS0II5bUCZ7YYJpmpO1lj9ge9d1NKhA?width=106&height=229&cropmode=none" />TIP CALCULATOR</h2>
+        </div>
+
+        <div class="=row percents">
+            <div class="container-fluid buttonHolder">
+                <div class="row">
+                    <div class="billHolder">
+                        <h4>ENTER BILL AMOUNT</h4>
+                        <input placeholder="0.00" id="billAmount" class="form-control billInput" />
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-xs-6">
+                        <button class="button" onclick="calculateTip(.10)"><img class="tipImg" src="https://o1bfdw-bn1306.files.1drv.com/y3mN4C-ToEl9ps7pi7Ol0uYF9pD_xSpq1nPn7egSpD8zX8KQE6Yr8tnhpSgHBKBE49MT5eeEiAkSjIE7o2XdU2HMFC0iIpKaUbD8E4Ugy35KUQ0BHyJccP9OJlCufUrHGNW2iSWEtBKysfYnZWk5ftrhSC8R42GZRw86awQPYAxHE4?width=563&height=535&cropmode=none"><br>10%</button>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <button class="button" onclick="calculateTip(.15)"><img class="tipImg" src="https://5rpeug.bl3301.livefilestore.com/y3mug5k5CdboJsZHRKX2rLL12DtUSqy8IbA7p1d2I94YfNum8Fl4Ebw8PPY8JQN8Firrck-UQD_etw6LcyfSsNqHBfHq7MIOcvwAcAQsowNev5FXuUQ4Qy9wyT_uNnpYF6NlATspXwmQcd7UYc5zVhx6zKP-lPwIOzxXOHq-Oo3dsA?width=535&height=535&cropmode=none"><br>15% </button>
+                    </div>
+                </div>
+
+                <div class="row icons">
+                    <div class="col-xs-6">
+                        <button class="button" onclick="calculateTip(.18)"><img class="tipImg" src="https://5bpeug.bl3301.livefilestore.com/y3mCI5YQ5tVYClcb8MrigPexiB8nL-w6D9Kvfg5r0r0PizpqMI_9vdWnSuoPnaD64ALEqzAZjMpiujLxkG4_82aaekIyEsyG-uWBeD1nMzsvhksK6uFvuAxUw0aVQ-KqRIWDbQATwXne-1lwpRKxTZt94RHzsUt4B9LOBJ2_kowb5Q?width=535&height=535&cropmode=none"><br>18%</button>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <button class="button" onclick="calculateTip(.20)"><img class="tipImg" src="https://6lpeug.bl3301.livefilestore.com/y3m59_EZV89__59AwWtnNl3Lcwu6f4ddLqZjhjzGWDTktZbgwH9bwBEcPLCjzIsnanfNPEpY1Qz3sMQEPDM3RmuFAUypktaVtopVMcPRryWboSnecfy8pkcTKd9rTNcte85XX1A2vx4sGCL3wI4qGUUL1HUx9RIyrVzrITX9C_qfxI?width=535&height=535&cropmode=none"><br>20%</button><br /><br />
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h4 class="blackFont">Amount to Tip:</h4>
+                        <div class="amountTotal" id="amountToTip"><img class="dollarSmall" src="https://qfbfdw-bn1306.files.1drv.com/y3mPka1g4XJ5R6vtDBONeK8P0j9_NASPpzRNQFLJfzbwe1wYfr8P2XKzDLr5UO_0oO9u9tdLQa0iIXBSDrsjHk7SHTIWucZifxf896iypVdb5ba3i9TICwLIp_b_mvn_JiO7NirWVLhK-NhPot5hLPc_lLiQn5PAARQdwhg3sawrbw?width=106&height=229&cropmode=none" /></div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <h4 class="blackFont">Total Bill:</h4>
+                        <div class="amountTotal" id="totalBill"><img class="dollarSmall" src="https://qfbfdw-bn1306.files.1drv.com/y3mPka1g4XJ5R6vtDBONeK8P0j9_NASPpzRNQFLJfzbwe1wYfr8P2XKzDLr5UO_0oO9u9tdLQa0iIXBSDrsjHk7SHTIWucZifxf896iypVdb5ba3i9TICwLIp_b_mvn_JiO7NirWVLhK-NhPot5hLPc_lLiQn5PAARQdwhg3sawrbw?width=106&height=229&cropmode=none" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

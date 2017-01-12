@@ -1,0 +1,78 @@
+﻿body {
+    font-family: 'Righteous', cursive;
+    padding-top: 110px;
+}
+
+.blackFont {
+    color: black;
+}
+
+.titleImg {
+    height: 50px;
+    width: 25px;
+}
+
+.dollarSmall {
+    height: 25px;
+    width: 12px;
+}
+
+.calc {
+    width: 375px;
+    height: 550px;
+    background-color: #939598;
+    color: white;
+    border-radius: 30px;
+}
+
+.tipImg {
+    height: 85px;
+    width: 85px;
+    background-color: none;
+}
+
+.percents {
+    height:440px;
+    width:345px;
+    background-color: white;
+}
+
+.icons{
+padding:11px;
+}
+
+.button {
+    color: black;
+    border: none;
+    background-color: white;
+    width: 100px;
+    height:105px;   
+    outline: none;
+}
+
+.buttonHolder {
+    width: 400px;
+    text-align: left;
+}
+
+
+.billInput {
+    width: 200px;
+}
+
+.billHolder {
+    max-width: 250px;
+    margin: 0 auto;
+    color: black;
+  
+}
+
+.amountTotal {
+    font-size: large;
+    border: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+}
+
